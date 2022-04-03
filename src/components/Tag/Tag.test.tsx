@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { render, fireEvent } from '@testing-library/react-native';
-import Tag from './Tag.component';
-import ProviderThemeJest from '../ProviderThemeJest/ProviderThemeJest.component';
+import { render } from '@testing-library/react-native';
+
+import { Tag, ProviderThemeJest } from 'src/components';
 
 describe('Render the Tag component', () => {
   it('should render a text', () => {

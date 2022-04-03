@@ -1,8 +1,9 @@
 import React from 'react';
-
 import { render, fireEvent } from '@testing-library/react-native';
+
+import { ProviderThemeJest } from 'src/components';
+
 import Input from './Input.component';
-import ProviderThemeJest from '../ProviderThemeJest/ProviderThemeJest.component';
 
 describe('Render the Input Component', () => {
   it('should be able to change the text on component', async () => {

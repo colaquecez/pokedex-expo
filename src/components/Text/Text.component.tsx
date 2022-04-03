@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextProps } from 'react-native';
+
 import * as S from './Text.styles';
 
 interface IText extends TextProps {

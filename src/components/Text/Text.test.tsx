@@ -1,11 +1,12 @@
 import React from 'react';
 
 import { render } from '@testing-library/react-native';
-import Text from './Text.component';
+
+import { Text } from 'src/components';
 
 describe('Render the Text component', () => {
   it('should render a text', () => {
-    const { getByText, debug } = render(<Text>Pikachu</Text>);
+    const { getByText } = render(<Text>Pikachu</Text>);
     getByText('Pikachu');
   });
 

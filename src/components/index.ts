@@ -6,3 +6,4 @@ export { default as Error } from './Error/Error.component';
 export { default as Loading } from './Loading/Loading.component';
 export { default as Input } from './Input/Input.component';
 export { default as ProviderThemeJest } from './ProviderThemeJest/ProviderThemeJest.component';
+export { default as Layout } from './Layout/Layout.component';

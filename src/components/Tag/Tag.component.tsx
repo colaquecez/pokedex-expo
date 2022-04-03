@@ -1,7 +1,6 @@
 import React from 'react';
 
 import * as S from './Tag.styles';
-
 interface ITag {
   children: React.ReactNode;
   color?: string;

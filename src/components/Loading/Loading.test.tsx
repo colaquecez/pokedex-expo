@@ -1,8 +1,7 @@
 import React from 'react';
+import { render } from '@testing-library/react-native';
 
-import { render, fireEvent } from '@testing-library/react-native';
-import Loading from './Loading.component';
-import ProviderThemeJest from '../ProviderThemeJest/ProviderThemeJest.component';
+import { Loading, ProviderThemeJest } from 'src/components';
 
 describe('Render the PokemonNotFound component', () => {
   it('should be able to render the component', () => {

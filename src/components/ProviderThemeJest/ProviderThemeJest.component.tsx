@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
-import { colors } from '../../styles/theme';
+
+import { colors } from 'src/styles/theme';
 
 interface IProviderThemeJest {
   children: React.ReactNode;
