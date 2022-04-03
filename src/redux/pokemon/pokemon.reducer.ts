@@ -14,7 +14,7 @@ export const PokemonReducer = createSlice({
   name: 'pokemon',
   reducers: {
     managePokemonAction: (state, action: PayloadAction<PokemonResult>) => {
-      const alreadyAdded = state.favorites.findIndex(
+      const alreadyAdded = state.favorites?.findIndex?.(
         (item) => item.id === action.payload.id
       );
 
