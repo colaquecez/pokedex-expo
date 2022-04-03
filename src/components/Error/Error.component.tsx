@@ -1,5 +1,7 @@
 import React from 'react';
-import Text from '../Text/Text.component';
+
+import { Text } from 'src/components';
+
 import * as S from './Error.styles';
 
 interface IError {
