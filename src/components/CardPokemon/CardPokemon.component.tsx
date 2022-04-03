@@ -1,8 +1,10 @@
 import React from 'react';
-import { Text } from '../../components';
+
+import { Text } from 'src/components';
+
+import PokeballFavorite from '../../../assets/pokeball_favorite.svg';
 import PokemonNotFound from '../PokemonNotFound/PokemonNotFound.component';
 import * as S from './CardPokemon.styles';
-import PokeballFavorite from '../../../assets/pokeball_favorite.svg';
 
 interface ICardPokemon {
   name: string;

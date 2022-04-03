@@ -3,7 +3,6 @@ import React from 'react';
 import { Text } from 'src/components';
 
 import * as S from './Error.styles';
-
 interface IError {
   refetch?: () => void;
   title?: string;
