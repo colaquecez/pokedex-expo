@@ -2,17 +2,27 @@ import React from 'react';
 import { Text } from '../../components';
 import PokemonNotFound from '../PokemonNotFound/PokemonNotFound.component';
 import * as S from './CardPokemon.styles';
+import PokeballFavorite from '../../../assets/pokeball_favorite.svg';
 
 interface ICardPokemon {
   name: string;
   image?: string;
   width?: number;
+  isFavorite?: boolean;
   onPress?: () => void;
+  textNotFound?: string;
 }
 
-const CardPokemon = ({ width = 0, image, name, onPress }: ICardPokemon) => {
+const CardPokemon = ({
+  width = 0,
+  image,
+  name,
+  textNotFound = 'Quem é esse pokemon?',
+  onPress,
+  isFavorite = false
+}: ICardPokemon) => {
   return (
-    <S.Button onPress={onPress}>
+    <S.Button testID="ButtonCardPokemonId" onPress={onPress}>
       <S.Container testID="ContainerCardPokemonId" width={width}>
         {image ? (
           <>
@@ -31,13 +41,19 @@ const CardPokemon = ({ width = 0, image, name, onPress }: ICardPokemon) => {
           </>
         ) : (
           <PokemonNotFound testID="PokemonNotFoundId">
-            Quem é esse pokemon?
+            {textNotFound}
           </PokemonNotFound>
         )}
 
         <Text fontSize={16} fontWeight="600" marginTop={8}>
           {name}
         </Text>
+
+        {isFavorite && (
+          <S.ContainerFavorite testID="FavoriteImageId">
+            <PokeballFavorite width={20} height={20} />
+          </S.ContainerFavorite>
+        )}
       </S.Container>
     </S.Button>
   );

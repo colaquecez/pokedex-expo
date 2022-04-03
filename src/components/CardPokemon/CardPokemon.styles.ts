@@ -26,3 +26,8 @@ export const Image = styled.Image`
 `;
 
 export const Button = styled.TouchableOpacity``;
+
+export const ContainerFavorite = styled.View`
+  position: absolute;
+  top: 10px;
+`;
