@@ -7,12 +7,14 @@ interface IText {
   marginRight: number;
   fontSize: number;
   color: string;
+  textAlign: string;
   textTransform: string;
   fontWeight: string;
 }
 
 export const TextStyle = styled.Text<IText>`
   margin-top: ${({ marginTop }) => marginTop}px;
+  text-align: ${({ textAlign }) => textAlign};
   margin-bottom: ${({ marginBottom }) => marginBottom}px;
   margin-left: ${({ marginLeft }) => marginLeft}px;
   margin-right: ${({ marginRight }) => marginRight}px;

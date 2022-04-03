@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { render, fireEvent } from '@testing-library/react-native';
+import { render } from '@testing-library/react-native';
 import Text from './Text.component';
 
 describe('Render the Text component', () => {
-  it('should renders a text', () => {
+  it('should render a text', () => {
     const { getByText, debug } = render(<Text>Pikachu</Text>);
     getByText('Pikachu');
   });
@@ -47,6 +47,18 @@ describe('Render the Text component', () => {
     const foundComponent = getByTestId('TextComponent');
     expect(foundComponent).toHaveStyle({
       fontSize: 20
+    });
+  });
+  it('should be able to change the font weight', () => {
+    const { getByTestId } = render(
+      <Text testID="TextComponent" fontWeight="600">
+        Pikachu
+      </Text>
+    );
+
+    const foundComponent = getByTestId('TextComponent');
+    expect(foundComponent).toHaveStyle({
+      fontWeight: '600'
     });
   });
   it('sould be able to change the textTransform', () => {

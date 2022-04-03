@@ -9,6 +9,7 @@ interface IText extends TextProps {
   marginLeft?: number;
   marginRight?: number;
   fontSize?: number;
+  textAlign?: React.CSSProperties['textAlign'];
   fontWeight?: string;
   textTransform?: React.CSSProperties['textTransform'];
   children: React.ReactNode;
@@ -18,6 +19,7 @@ const Text = ({
   color = '#000000',
   marginBottom = 0,
   marginLeft = 0,
+  textAlign = 'left',
   marginRight = 0,
   fontWeight = '400',
   marginTop = 0,
@@ -28,6 +30,7 @@ const Text = ({
 }: IText) => {
   return (
     <S.TextStyle
+      textAlign={textAlign}
       fontSize={fontSize}
       color={color}
       fontWeight={fontWeight}
