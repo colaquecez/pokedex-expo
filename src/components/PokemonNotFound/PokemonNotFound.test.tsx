@@ -2,15 +2,14 @@ import React from 'react';
 
 import { render, fireEvent } from '@testing-library/react-native';
 import PokemonNoutFound from './PokemonNotFound.component';
-import { ThemeProvider } from 'styled-components/native';
-import { colors } from '../../styles/theme';
+import ProviderThemeJest from '../ProviderThemeJest/ProviderThemeJest.component';
 
 describe('Render the PokemonNotFound component', () => {
   it('should render a text', () => {
     const { getByText } = render(
-      <ThemeProvider theme={colors}>
+      <ProviderThemeJest>
         <PokemonNoutFound>Pokemon teste</PokemonNoutFound>
-      </ThemeProvider>
+      </ProviderThemeJest>
     );
     getByText('Pokemon teste');
   });
