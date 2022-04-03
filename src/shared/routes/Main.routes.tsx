@@ -3,10 +3,11 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Details } from '../../screens/';
 import MenuRouter from '../routes/Menu.routes';
+import { PokemonResult } from '../../redux/pokemon/pokemon.types';
 
 export type RootStackParamList = {
   ListHome: undefined;
-  Details: { name: string; url: string; image: string };
+  Details: PokemonResult;
 };
 
 const MainStack = createNativeStackNavigator<RootStackParamList>();
