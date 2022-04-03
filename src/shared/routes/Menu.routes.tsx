@@ -30,6 +30,8 @@ const MenuTabBarRoute = () => {
       />
       <MenuTabBar.Screen
         options={{
+          headerShown: false,
+          tabBarLabel: 'Favoritos',
           tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons name="heart" size={size} color={color} />
           )
