@@ -5,8 +5,7 @@ Com o terminal de sua preferência, execute os seguintes comandos:
 yarn
 cd ios
 pod install
-npx react-native-run-ios / npx react-native-run-android / expo start --ios / expo start --android
-
+yarn ios / yarn android
 yarn jest //para executar os testes
 ```
 
