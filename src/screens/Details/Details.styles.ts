@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { Dimensions } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 
 interface ISafeAreaView {
   backgroundColor: string;
@@ -25,7 +25,7 @@ export const SafeAreaView = styled.SafeAreaView<ISafeAreaView>`
 
 export const Wrapper = styled.View`
   flex: 1;
-  padding-top: 8px;
+  padding-top: ${Platform.select({ android: 32, ios: 8 })}px;
   padding-left: 16px;
   padding-right: 16px;
 `;
