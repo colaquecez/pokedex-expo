@@ -1,15 +1,15 @@
 
-## Rodar o projeto
+## 💻 Como executar o projeto
+Com o terminal de sua preferência, execute os seguintes comandos:
 ```
 yarn
 cd ios
 pod install
-npx react-native-run-ios / npx react-native-run-android
-
+yarn ios / yarn android
 yarn jest //para executar os testes
 ```
 
-## Estrutura de pastas
+## 📓 Estrutura de pastas
 
 ```
 App.tsx
@@ -60,7 +60,7 @@ src
         ...
 ````
 
-## Tecnologias
+## 🚀  Tecnologias utilizadas
 
 -  Styled-components: Pela facilidade de criar components e deixar o código mais organizado e fácil de manutenção
 -  Redux-Toolkit-Query: Utilizando o poder do cache para controlar as chamadas de API deixando centralizado e fácil de debugar. Algumas facilidades que temos usando essa ferramenta é a padronização do código com hooks gerados automáticos, fácil de manipular loadings, errors, refetch, evitamos duplicar requests utilizando o sistema de cache, e manipulação de cache baseado no lifetime e a interação do usuário com o app.
