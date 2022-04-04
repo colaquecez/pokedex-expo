@@ -17,7 +17,7 @@ const TypesList = ({ typesData }: ITypes) => {
         Tipos
       </Text>
 
-      {typeof typesData === 'object' && typesData?.types?.length > 0 ? (
+      {typesData && typesData?.types?.length > 0 ? (
         <S.ContainerTypes>
           {typesData?.types.map((types) => (
             <Tag

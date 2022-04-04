@@ -17,8 +17,7 @@ const EggGroupList = ({ speciesData }: IEggGroupList) => {
         Grupos de Ovos
       </Text>
 
-      {typeof speciesData === 'object' &&
-      speciesData?.egg_groups?.length > 0 ? (
+      {speciesData && speciesData?.egg_groups?.length > 0 ? (
         <S.ContainerTypes>
           {speciesData?.egg_groups.map((egg) => (
             <Tag key={egg.name} color={groupEggsColor[egg.name]}>

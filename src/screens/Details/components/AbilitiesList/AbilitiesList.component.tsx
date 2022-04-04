@@ -12,8 +12,7 @@ const AbilitiesList = ({ abilitieData }: IAbilitiesList) => {
       <Text fontSize={18} fontWeight="700" marginTop={16} marginBottom={8}>
         Habilidades
       </Text>
-      {typeof abilitieData === 'object' &&
-      abilitieData?.abilities?.length > 0 ? (
+      {abilitieData && abilitieData?.abilities?.length > 0 ? (
         <>
           {abilitieData?.abilities.map((abilities) => (
             <Text key={abilities.ability.name}>{abilities.ability.name}</Text>
