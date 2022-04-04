@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { Text, Tag } from 'src/components';
-import { GetPokemonByNameResult } from 'src/redux/pokemon/pokemon.types';
+import { IGetPokemonByNameResult } from 'src/redux/pokemon/pokemon.types';
 import { typesPokemonColor } from 'src/utils/specieTransformColor';
 
 import * as S from './Types.styles';
 
 interface ITypes {
-  typesData: GetPokemonByNameResult | undefined;
+  typesData: IGetPokemonByNameResult | undefined;
 }
 
 const TypesList = ({ typesData }: ITypes) => {

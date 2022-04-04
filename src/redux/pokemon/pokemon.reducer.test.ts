@@ -1,6 +1,5 @@
 import { AnyAction } from 'redux';
 import reducer, { managePokemonAction } from './pokemon.reducer';
-import { IPokemonInitialState, PokemonResult } from './pokemon.types';
 
 test('should return the initial state', () => {
   expect(reducer(undefined, {} as AnyAction)).toEqual({

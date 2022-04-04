@@ -1,11 +1,11 @@
-export interface PokemonResponse {
-  results: PokemonResult[];
+export interface IPokemonResponse {
+  results: IPokemonResult[];
   count: number;
   next: string;
   previous: string;
 }
 
-export interface PokemonResult {
+export interface IPokemonResult {
   name: string;
   url: string;
   image: string;
@@ -34,24 +34,24 @@ export interface ITypes {
   };
 }
 
-export interface GetPokemonByNameResult {
+export interface IGetPokemonByNameResult {
   abilities: IAbilitiesPokemon[];
   species: ISpecies;
   types: ITypes[];
 }
 
-export interface EggGroups {
+export interface IEggGroups {
   name: string;
   url: string;
 }
 
-export interface GetSpeciesPokemonResult {
+export interface IGetSpeciesPokemonResult {
   color: {
     name: string;
   };
-  egg_groups: EggGroups[];
+  egg_groups: IEggGroups[];
 }
 
 export interface IPokemonInitialState {
-  favorites: PokemonResult[];
+  favorites: IPokemonResult[];
 }

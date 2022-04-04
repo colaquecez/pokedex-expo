@@ -3,7 +3,7 @@ import { FlatList, Dimensions } from 'react-native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import { useLazyGetPokemonsQuery } from 'src/redux/pokemon/pokemon.api';
-import { PokemonResult } from 'src/redux/pokemon/pokemon.types';
+import { IPokemonResult } from 'src/redux/pokemon/pokemon.types';
 import { CardPokemon, Text, Error, Loading, Layout } from 'src/components';
 import { RootStackParamList } from 'src/shared/routes/Main.routes';
 import columnWrapperStyle from 'src/styles/columWrapperListPokemon';
@@ -16,7 +16,7 @@ type NavigationProps = NativeStackScreenProps<RootStackParamList, 'ListHome'>;
 
 const Home = ({ navigation }: NavigationProps) => {
   const [page, setPage] = useState(0);
-  const [results, setResults] = useState<PokemonResult[]>([]);
+  const [results, setResults] = useState<IPokemonResult[]>([]);
   const { favorites } = useAppSelector((state) => state.pokemon);
 
   const [

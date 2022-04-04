@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { GetSpeciesPokemonResult } from 'src/redux/pokemon/pokemon.types';
+import { IGetSpeciesPokemonResult } from 'src/redux/pokemon/pokemon.types';
 import { Text, Tag } from 'src/components';
 import { groupEggsColor } from 'src/utils/specieTransformColor';
 
 import * as S from './EggGroupList.styles';
 
 interface IEggGroupList {
-  speciesData: GetSpeciesPokemonResult | undefined;
+  speciesData: IGetSpeciesPokemonResult | undefined;
 }
 
 const EggGroupList = ({ speciesData }: IEggGroupList) => {

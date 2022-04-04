@@ -1,17 +1,17 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import {
-  GetPokemonByNameResult,
-  GetSpeciesPokemonResult,
-  PokemonResponse
+  IGetPokemonByNameResult,
+  IGetSpeciesPokemonResult,
+  IPokemonResponse
 } from './pokemon.types';
 
 export const pokemonApi = createApi({
   reducerPath: 'pokemonApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://pokeapi.co/api/v2/' }),
   endpoints: (builder) => ({
-    getPokemons: builder.query<PokemonResponse, number>({
+    getPokemons: builder.query<IPokemonResponse, number>({
       query: (page = 0) => `pokemon?offset=${page}&limit=20`,
-      transformResponse: (response: PokemonResponse) => {
+      transformResponse: (response: IPokemonResponse) => {
         const results = response.results.map((pokemon) => {
           const idPokemon = pokemon?.url
             ?.split('pokemon')?.[1]
@@ -28,10 +28,10 @@ export const pokemonApi = createApi({
         return { ...response, results: results };
       }
     }),
-    getPokemonByName: builder.query<GetPokemonByNameResult, string>({
+    getPokemonByName: builder.query<IGetPokemonByNameResult, string>({
       query: (name) => `pokemon/${name}`
     }),
-    getPokemonSpecies: builder.query<GetSpeciesPokemonResult, string>({
+    getPokemonSpecies: builder.query<IGetSpeciesPokemonResult, string>({
       query: (name) => `pokemon-species/${name}`
     })
   })

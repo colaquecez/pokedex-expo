@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text } from 'src/components';
-import { GetPokemonByNameResult } from 'src/redux/pokemon/pokemon.types';
+import { IGetPokemonByNameResult } from 'src/redux/pokemon/pokemon.types';
 
 interface IAbilitiesList {
-  abilitieData: GetPokemonByNameResult | undefined;
+  abilitieData: IGetPokemonByNameResult | undefined;
 }
 
 const AbilitiesList = ({ abilitieData }: IAbilitiesList) => {

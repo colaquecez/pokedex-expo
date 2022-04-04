@@ -1,9 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import {
-  IPokemonInitialState,
-  PokemonResponse,
-  PokemonResult
-} from './pokemon.types';
+import { IPokemonInitialState, IPokemonResult } from './pokemon.types';
 
 const initialState: IPokemonInitialState = {
   favorites: []
@@ -13,7 +9,7 @@ export const PokemonReducer = createSlice({
   initialState,
   name: 'pokemon',
   reducers: {
-    managePokemonAction: (state, action: PayloadAction<PokemonResult>) => {
+    managePokemonAction: (state, action: PayloadAction<IPokemonResult>) => {
       const alreadyAdded = state.favorites?.findIndex?.(
         (item) => item.id === action.payload.id
       );
