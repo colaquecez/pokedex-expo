@@ -1,3 +1,21 @@
+# Pokedex Expo
+
+<table>
+<tr>
+  <td>
+    <img src="https://user-images.githubusercontent.com/38195454/161457807-ee0da46c-57f8-4d97-81eb-4510c3fd2ffd.png" />
+  </td>
+  <td>
+    <img src="https://user-images.githubusercontent.com/38195454/161457822-aae8615a-53e8-4393-88bb-c7a8326d681d.png" />
+  </td>
+  <td>
+    <img src="https://user-images.githubusercontent.com/38195454/161457835-2e2a8c2d-6c87-4cf1-b537-bf92655b1f26.png" />
+  </td>
+ <td>
+    <img src="https://user-images.githubusercontent.com/38195454/161458536-1bc3010b-26a4-4b98-b7bd-c3c0a497e0f8.png" />
+  </td>
+</tr>
+</table>
 
 ## 💻 Como executar o projeto
 Com o terminal de sua preferência, execute os seguintes comandos:
@@ -69,15 +87,3 @@ src
 - Redux-Persist: Utilizado para mantermos as informações que queremos que seja persistida.
 - Typescript: Visando uma melhor experiência de desenvolvimento utilizei typescript, com isso conseguimos ganhar tempo de desenvolvimento mapeando todas as apis e conseguindo utilizar o auto-complete, também dando mais segurança na hora de passar algum dado para nossas funções.
 - Jest / React Native Testing Library: Utilizei para testarmos nossos components.
-
-## ScreenShots
-
-<div>
-<img src="https://user-images.githubusercontent.com/38195454/161457807-ee0da46c-57f8-4d97-81eb-4510c3fd2ffd.png" width="440" height="890">
-<img src="https://user-images.githubusercontent.com/38195454/161457822-aae8615a-53e8-4393-88bb-c7a8326d681d.png" width="440" height="890">
-</div>
-
-<div>
-<img src="https://user-images.githubusercontent.com/38195454/161457835-2e2a8c2d-6c87-4cf1-b537-bf92655b1f26.png" width="440" height="890">
-<img src="https://user-images.githubusercontent.com/38195454/161458536-1bc3010b-26a4-4b98-b7bd-c3c0a497e0f8.png" width="440" height="890">
-</div>
