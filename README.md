@@ -27,7 +27,7 @@ yarn ios / yarn android
 yarn jest //execute the tests
 ```
 
-## 📓 Estrutura de pastas
+## 📓 Structure
 
 ```
 App.tsx
