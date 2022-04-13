@@ -1,4 +1,4 @@
-# Pokedex Expo
+# Pokedex React Native Expo
 
 <table>
 <tr>
@@ -17,14 +17,14 @@
 </tr>
 </table>
 
-## 💻 Como executar o projeto
-Com o terminal de sua preferência, execute os seguintes comandos:
+## 💻 How build the project
+With the terminal of your choice, run the following commands:
 ```
 yarn
 cd ios
 pod install
 yarn ios / yarn android
-yarn jest //para executar os testes
+yarn jest //execute the tests
 ```
 
 ## 📓 Estrutura de pastas
@@ -78,12 +78,12 @@ src
         ...
 ````
 
-## 🚀  Tecnologias utilizadas
+## 🚀  Technologies
 
--  Styled-components: Pela facilidade de criar components e deixar o código mais organizado e fácil de manutenção
--  Redux-Toolkit-Query: Utilizando o poder do cache para controlar as chamadas de API deixando centralizado e fácil de debugar. Algumas facilidades que temos usando essa ferramenta é a padronização do código com hooks gerados automáticos, fácil de manipular loadings, errors, refetch, evitamos duplicar requests utilizando o sistema de cache, e manipulação de cache baseado no lifetime e a interação do usuário com o app.
--  React-Navigation v6: Biblioteca para fazermos o roteamento do app
--  Redux-Toolkit: Foi utilizado redux para tratarmos o gerenciamento de estado, visando uma estrutura escalável e pela escolha do RTK(Redux Toolkit Query)  escolhi o Redux. Também não escolhi o context pelo problema que temos com re-render que precisamos ficar tratando com cuidado no App, [documento do context](https://reactjs.org/docs/context.html) .
-- Redux-Persist: Utilizado para mantermos as informações que queremos que seja persistida.
-- Typescript: Visando uma melhor experiência de desenvolvimento utilizei typescript, com isso conseguimos ganhar tempo de desenvolvimento mapeando todas as apis e conseguindo utilizar o auto-complete, também dando mais segurança na hora de passar algum dado para nossas funções.
-- Jest / React Native Testing Library: Utilizei para testarmos nossos components.
+-  Styled-components
+-  Redux-Toolkit-Query
+-  React-Navigation v6
+-  Redux-Toolkit
+- Redux-Persist
+- Typescript
+- Jest / React Native Testing Library
